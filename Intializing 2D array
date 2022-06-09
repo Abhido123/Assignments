@@ -1,0 +1,18 @@
+//make a program to intialize 2D array value which is having nth row and nth column
+#include<stdio.h>
+int main()
+{
+    int row,col;
+    printf("enter the row and column:");
+    scanf("%d",&row);
+    scanf("%d",&col);
+    int A[row][col];
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<col;j++)
+        {
+            scanf("%d",&A[i][j]);
+        }
+    }
+    return 0;
+}
