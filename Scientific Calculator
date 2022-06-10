@@ -1,0 +1,69 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+void sciTif(int n1,int n2)
+{
+    
+    cout<<" Calculate power:";
+    int a=pow(n1,n2);
+    cout<<a;
+}
+int main()
+{
+    int n;
+    int n1,n2;
+    cout<<"enter the number:";
+    cin>>n1>>n2;
+    cout<<"1. Addition:";
+    cout<<"2. Subtraction:";
+    cout<<"3. Multiplication:";
+    cout<<"4. Division:";
+    cout<<"5. Remainder:";
+    cout<<"6. Or u want to do operation in scientific calculator:";
+    cout<<"enter the operation u want to perform:";
+    cin>>n;
+    switch(n)
+    {
+       case 1:
+        {
+            int n3=n1+n2;
+            cout<<n3;
+            break;
+        }
+        case 2:
+        {
+            int n3=n1-n2;
+            cout<<n3;
+            break;
+        }
+        case 3:
+        {
+            int n3=n1*n2;
+            cout<<n3;
+            break;
+        }
+        case 4:
+        {
+            int n3=n1/n2;
+            cout<<n3;
+            break;
+        }
+        case 5:
+        {
+            int n3=n1%n2;
+            cout<<n3;
+            break;
+        }
+        case 6:
+        {
+            sciTif(n1,n2);
+            break;
+        }
+        default:
+        {
+            cout<<"wrong choice:";
+        }
+    }
+    return 0;
+    
+}
