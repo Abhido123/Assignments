@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+#include<string.h>
+int
+main ()
+{
+  int n;
+  cout << "1. String length:";
+  cout << "\n2. string concatenation:";
+  cout << "\n3. string compare:";
+  cout << "entre the option:\n";
+  cin >> n;
+  switch (n)
+    {
+    case 1:
+      {
+	char ary[] = "Hello";
+	cout << "Length of String = " << strlen (ary) << endl;
+	break;
+      }
+    case 2:
+      {
+    char ch[] = "hello";
+    char ch1[] = " world";
+    strcat(ch,ch1);
+    cout << ch << endl;
+    break;
+      }
+    case 3:
+      {
+	char ch[] = "mango";  
+    char ch1[50];  
+    do {  
+     cout<<"What is my favourite fruit? ";  
+     cin>>ch1;  
+    } while (strcmp (ch,ch1) != 0);  
+    cout<<"Answer is correct!!"<<endl;  
+	break;
+      }
+      default:
+      {
+          cout<<"wrong choice:";
+      }
+    }
+
+  return 0;
+}
