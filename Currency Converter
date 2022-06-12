@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{   
+       int Rupee;
+       float B,M,J,P;
+       cout<<"Enter currency in Indian Rupee"<<endl;
+       cin>>Rupee;
+       B=Rupee*0.571505;
+       M=Rupee*10.7956;
+       J=Rupee*112.212;
+       P=Rupee*102.243;
+       cout<<Rupee<<"Indian Rupee are equal to "<<B<<" British pounds"<<endl;
+       cout<<Rupee<<"Indian Rupee are equal to  "<<M<<" Mexican pesos"<<endl;
+       cout<<Rupee<<"Indian Rupee are equal to  "<<J<<" Indian Rupee are equal to American dollars are equal to "<<P<<" Pakistani rupees"<<endl;
+
+      return 0;
+}
